@@ -1,0 +1,145 @@
+/* === Base Styling === */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(250, 147, 147);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+html, body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+
+
+a {
+  /* color: white; */
+  color: #3fff7c;
+  font-size: 14px;
+}
+
+#main {
+  width: 100%;
+  min-width: 1100px; /* Prevent shrinkage on mobile */
+}
+
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 680px;
+  margin-top: 10px;
+}
+
+#canvas {
+  width: 1200px;
+  height: 680px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === Text Message Box === */
+#text {
+  width: 272px;
+  height: 560px;
+  left: 80px;
+  top: 80px;
+  position: absolute;
+}
+
+#code {
+  display: none;
+  color: rgb(196, 255, 255);
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 70px;
+  line-height: 25px;
+}
+
+/* === Clock === */
+#clock-box {
+  position: absolute;
+  left: 60px;
+  top: 550px;
+  font-size: 28px;
+  display: none;
+}
+
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#clock {
+  margin-left: 48px;
+}
+
+#clock .digit {
+  font-size: 64px;
+}
+
+/* === Error for old browsers === */
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+
+/* === Interactions === */
+.hand {
+  cursor: pointer;
+}
+
+.say {
+  margin-left: 5px;
+}
+
+.space {
+  margin-right: 150px;
+}
+
+/* === Message Box (bottom text) === */
+#message-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  font-family: monospace;
+}
+
+/* Works on WebKit browsers: Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(53, 233, 53);  /* ✅ Green scrollbar thumb */
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
+
+/* === Responsive Support for Small Screens === */
+@media (max-width: 1200px) {
+  body {
+    overflow-x: auto;
+  }
+
+  #main {
+    min-width: 1100px;
+  }
+}
